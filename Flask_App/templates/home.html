@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask app</title>
+    <style>
+    p.btn-primary {
+    background-color: rgba(203, 152, 142, 0.5);
+    border: none;
+    }
+
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+    div.big {
+    line-height: 2;
+
+
+    }
+    </style>
+
+    <body  background= "/static/predict2.jpg">
+
+      <!--body background= "/static/record.jpeg">-->
+      <h1 style="color:green;"> Startup Success Prediction</h1>
+      	<h3 style="color:green;"> This application predicts the probability of success rate for a startup company. </h3>
+      <div class="big">
+      	<form action="/results" method="post" id="nameform">
+          
+      	     Funding Amount ($): <input type="text" name="amount_funding" required><br>
+             Months to 1st Funing: <input type="text" name="months_funding" required><br>
+             Number of rounds: <input type="text" name="rounds_funding" required><br><br>
+
+             Industry: <input type="text" name="industry" required><br>
+             Country: <input type="text" name="country" required><br>
+             State: <input type="text" name="state" required><br><br>
+
+          </div>
+
+
+    	</form>
+    </div>
+
+    
+    	<button class="btn-primary" type="submit" form="nameform" value="Submit">Submit</button>
+   
+
+
+    </body>
+    </html>
+
+
